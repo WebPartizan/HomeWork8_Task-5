@@ -6,6 +6,13 @@ public class Employee {
     private String surname;
     private String position;
 
+    public Employee(int idNumber, String name, String surname, String position) {
+        this.idNumber = idNumber;
+        this.name = name;
+        this.surname = surname;
+        this.position = position;
+    }
+
     public int getIdNumber() {
         return idNumber;
     }
@@ -36,5 +43,8 @@ public class Employee {
 
     public void setPosition(String position) {
         this.position = position;
+    }
+
+    public void add(Employee list) {
     }
 }
