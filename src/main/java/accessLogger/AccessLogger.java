@@ -7,12 +7,16 @@ import java.util.LinkedList;
 public class AccessLogger {
     private LinkedList <Employee> list;
 
-    public AccessLogger(LinkedList<Employee> list) {
+    public LinkedList<Employee> getList() {
+        return list;
+    }
+
+    public AccessLogger(LinkedList list) {
         this.list = list;
     }
 
-    private void logAccess (Employee list) {
-        list.add(list);
+    public void logAccess (Employee em) {
+        list.add(em);
 
     }
 
